@@ -1,8 +1,8 @@
 require('dotenv').config();
 
-const PORT_HTTP2 = process.env.PORT_HTTP2;
+const PORT = process.env.PORT;
 
 const config = {
-    port: PORT_HTTP2
+    port: PORT
 }
 module.exports = config
