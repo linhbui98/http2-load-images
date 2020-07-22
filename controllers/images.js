@@ -1,4 +1,3 @@
-const config = require('../config')
 const { getFile } = require('../shared');
 
 module.exports = {
