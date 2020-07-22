@@ -1,0 +1,15 @@
+- var m = 1;
+doctype html
+html
+  head
+    title= title
+  body(style="display: flex; justify-content: center;")
+    div
+      div HTTP2 Images
+      br
+      while m <= 100
+        if (m % 10 == 0)
+          img(width="50" height="50" src=`https://${host}:${PORT_HTTP2}/download (${m++}).jpeg`)
+          br
+        else
+          img(width="50" height="50" src=`https://${host}:${PORT_HTTP2}/download (${m++}).jpeg`)
