@@ -12,6 +12,6 @@ http2app.set('views', path.join(__dirname, 'views'));
 http2app.set('view engine', 'pug');
 http2app.get('/', indexRoute)
 
-Spdy.createServer(certificate, http2app).listen(PORT, () => {
+Spdy.createServer(certificate, http2app).listen(process.env.PORT, () => {
     console.log(`Running app http2`)
 });
