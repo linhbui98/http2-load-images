@@ -6,8 +6,8 @@ const imagesDir = `${__dirname}/../assets/`;
 
 module.exports = {
     certificate: {
-        key: Fs.readFileSync(`${__dirname}/../certificate/localhost.key`),
-        cert: Fs.readFileSync(`${__dirname}/../certificate/localhost.crt`)
+        key: Fs.readFileSync(`${__dirname}/../certificate/private.key`),
+        cert: Fs.readFileSync(`${__dirname}/../certificate/certificate.crt`)
     },
     getFile: (reqPath) => {
         const filePath = Path.join(imagesDir, reqPath);
