@@ -3,11 +3,11 @@ const Mime = require('mime')
 const Path = require('path')
 
 const imagesDir = `${__dirname}/../assets/`;
-
+console.log("linh", imagesDir)
 module.exports = {
     certificate: {
         key: Fs.readFileSync(`${__dirname}/../certificate/privkey.pem`),
-        cert: Fs.readFileSync(`${__dirname}/../certificate/certificate.crt`)
+        cert: Fs.readFileSync(`${__dirname}/../certificate/certificate.cer`)
     },
     getFile: (reqPath) => {
         const filePath = Path.join(imagesDir, reqPath);
